@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    -- event = 'BufWritePre', -- uncomment for format on save
+    event = 'BufWritePre', -- uncomment for format on save
     opts = require "configs.conform",
   },
 
@@ -12,7 +12,11 @@ return {
       require "configs.lspconfig"
     end,
   },
-
+{
+    "mrcjkb/rustaceanvim",
+    version = "^4",
+    ft = { "rust" },
+},
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
